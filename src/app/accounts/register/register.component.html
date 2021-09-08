@@ -1,0 +1,39 @@
+
+<div class="container">
+    <h1 class="well">Registration Form</h1>
+    <div class="col-lg-12 well">
+        <div class="row">
+            <form>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter First Name Here.." class="form-control"  [(ngModel)]='name' [ngModelOptions]="{standalone:true}">
+                        </div><br>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter Password Here.." class="form-control" [(ngModel)]='pwd' [ngModelOptions]="{standalone:true}">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 form-group">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter City Name Here.." class="form-control" [(ngModel)]='city' [ngModelOptions]="{standalone:true}">
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label>Phone Number</label>
+                        <input type="number" placeholder="Enter Phone Number Here.." class="form-control" [(ngModel)]='phone' [ngModelOptions]="{standalone:true}">
+                    </div>
+                    
+
+                </div>
+                <button type="button" class="btn btn-lg btn-info" (click)='addCust()' >Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

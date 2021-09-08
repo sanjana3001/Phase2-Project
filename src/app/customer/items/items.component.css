@@ -1,0 +1,15 @@
+.table{
+    width: 50%;
+    margin-left: 20%;
+}
+h1{
+    text-align: center;
+}
+thead{
+    background-color: gray;
+}
+.well{
+
+    margin-left: 250px;
+    margin-right: 100px;  
+}

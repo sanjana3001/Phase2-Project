@@ -1,0 +1,26 @@
+<h1>List of Customers</h1>
+
+<div class="well">
+<table class="table table-hover table-bordered">
+    <thead class="thead-green">
+      <tr>
+        <th >ID</th>
+        <th >Name</th>
+        <th>City</th>
+        <th >Phone Number</th>
+        <th>Options</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let c of x'>
+          <td>{{c.id}}</td>
+          <td>{{c.name}}</td>
+          <td>{{c.city}}</td>
+          <td>{{c.phone}}</td>  
+          
+          <button (click)="delete(c.id)" class="btn btn-block btn-danger">Delete Customer</button>  
+      </tr>
+    </tbody>
+  </table>
+</div>

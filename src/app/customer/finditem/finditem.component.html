@@ -1,0 +1,40 @@
+<h1>Find Item by Name or ID</h1>
+
+Enter Item Id:
+<button (click)='getItem(id)'>Search</button>
+<input type="text" [(ngModel)]='id' /> 
+<br>
+<br>
+
+
+Enter Item Name:
+<button (click)='getItemByName(Name)'>Search</button>
+<input type="text" [(ngModel)]='Name' /> 
+
+<div class="well">
+<table class="table table-hover table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Calories</th>
+            <th scope="col">Description</th>
+            <th scope="col">Quantity</th>
+            <th>Place Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.Name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.calories}}</td>
+            <td>{{item.desc}}</td>
+            <td>{{item.quantity}}</td> 
+            <button type="button" class="btn btn-primary" (click)="order(id)"  [(ngModel)]='id'>Order</button>
+        </tr>
+    </tbody>
+</table>
+</div>
+
